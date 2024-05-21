@@ -24,7 +24,7 @@ public class TesteArquivo {
     }
 
     private static void escritor(String path) throws IOException {
-        BufferedWriter buffWrite = new BufferedWriter(new FileWriter(path, true));
+        BufferedWriter buffWrite = new BufferedWriter(new FileWriter(path, true)); // o bloco (new FileWriter(path, true)) foi acrescentado para seguir com o processo de salvamento do valores digitados pelo usuario.
         String linha = "";
         Scanner in = new Scanner(System.in);
         System.out.println("Escreva algo: ");
